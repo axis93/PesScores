@@ -1,0 +1,34 @@
+﻿<Window x:Class="PesScores.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PesScores"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btn_Spuk" Content="Add Goal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="453,196,0,0" Click="btn_Spuk_Click"/>
+        <Button x:Name="btn_Roy" Content="Add Goal " HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="453,120,0,0" Click="btn_Roy_Click"/>
+        <Button x:Name="btn_AddDate" Content="Add Date" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="453,51,0,0" Click="btn_AddDate_Click"/>
+        <Button x:Name="btn_DisplayBoard" Content="Display Board" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="453,267,0,0" RenderTransformOrigin="0.5,0.5" Click="btn_DisplayBoard_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.521"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="txt_spuk" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="255,196,0,0"/>
+        <TextBox x:Name="txt_roy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="255,121,0,0" TextChanged="txt_roy_TextChanged"/>
+        <TextBox x:Name="txt_date" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="dd//mm/yy" VerticalAlignment="Top" Width="120" Margin="255,52,0,0"/>
+        <Label x:Name="lbl_player2" Content="Spuk" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,198,0,0"/>
+        <Label x:Name="lbl_player1" Content="Roy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,126,0,0"/>
+        <Label Content="Insert Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,52,0,0"/>
+        <Button x:Name="btn_DisplayResults" Content="Display Results" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="453,346,0,0" Click="btn_DisplayResults_Click"/>
+        <Button x:Name="btn_saveResult" Content="Save Result" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="634,196,0,0" Click="btn_saveResult_Click"/>
+        <TextBlock x:Name="txtOutput" HorizontalAlignment="Left" Margin="48,254,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="112" Width="367"/>
+
+    </Grid>
+</Window>
